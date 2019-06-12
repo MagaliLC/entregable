@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Entregable_Magali</string>
+    <string name="name">Nombre</string>
+    <string name="hintName">Escribe tu nombre</string>
+    <string name="surname">Apellido</string>
+    <string name="hintSurname">Escribe aquí tu apellido</string>
+    <string name="web">Web</string>
+    <string name="hintWeb">Escribe aquí tu web</string>
+    <string name="phone">Teléfono</string>
+    <string name="hintPhone">Escribe aquí tu teléfono</string>
+    <string name="btnShow">Mostrar</string>
+    <string name="btnDelete">Borrar</string>
+
+</resources>
