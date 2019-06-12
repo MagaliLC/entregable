@@ -10,5 +10,9 @@
     <string name="hintPhone">Escribe aquí tu teléfono</string>
     <string name="btnShow">Mostrar</string>
     <string name="btnDelete">Borrar</string>
-
+    <string name="deleteAllFields">¿Desea borrar todos los campos</string>
+    <string name="yes">SÍ</string>
+    <string name="no">NO</string>
+    <string name="empty">Este campo no puede estar vacío</string>
+    <string name="counter">Número de visitas:</string>
 </resources>

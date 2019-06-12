@@ -9,33 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerInParent="true">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:layout_marginLeft="20dp"
-        android:drawableLeft="@drawable/name"
-        />
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="0dp"
-        android:layout_weight="2"
-        android:layout_height="wrap_content"
-        android:hint="@string/hintName"
-        android:inputType="text"
-        />
-
-</LinearLayout>
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,64 +19,92 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="@string/surname"
-                android:layout_marginLeft="20dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
                 android:drawableLeft="@drawable/name"
-            />
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="2"
+                android:hint="@string/hintName"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/name"
+                android:text="@string/surname" />
 
             <EditText
                 android:id="@+id/surname"
                 android:layout_width="0dp"
-                android:layout_weight="2"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="2"
                 android:hint="@string/hintSurname"
-                android:inputType="text"/>
+                android:inputType="text" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="@string/web"
-                android:layout_marginLeft="20dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
                 android:drawableLeft="@drawable/web"
-                />
+                android:text="@string/web" />
 
             <EditText
                 android:id="@+id/web"
                 android:layout_width="0dp"
-                android:layout_weight="2"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="2"
                 android:hint="@string/hintWeb"
-                android:inputType="textUri"/>
+                android:inputType="textUri" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="@string/phone"
-                android:layout_marginLeft="20dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
                 android:drawableLeft="@drawable/phone"
-                />
+                android:text="@string/phone" />
 
             <EditText
                 android:id="@+id/phone"
                 android:layout_width="0dp"
-                android:layout_weight="2"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="2"
                 android:hint="@string/hintPhone"
-                android:inputType="phone"/>
+                android:inputType="phone" />
 
         </LinearLayout>
 
@@ -116,18 +119,17 @@
                 android:layout_margin="30dp"
                 android:layout_weight="1"
                 android:background="@color/blue"
-                android:text="@string/btnShow"
-                android:onClick="showButtonPressed"
-                />
+                android:onClick="sendButtonPressed"
+                android:text="@string/btnShow" />
 
             <Button
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
-                android:text="@string/btnDelete"
+                android:layout_weight="1"
                 android:background="@color/red"
-                />
+                android:onClick="openDialog"
+                android:text="@string/btnDelete" />
         </LinearLayout>
 
     </LinearLayout>
