@@ -25,20 +25,6 @@ public class MainActivity extends AppCompatActivity {
         etWeb = findViewById(R.id.web);
     }
 
-    public void showButtonPressed(View view) {
-        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        String name = etName.getText().toString();
-        String surname = etSurname.getText().toString();
-        String web = etWeb.getText().toString();
-        int phone = Integer.parseInt(etPhone.getText().toString());
-        intent.putExtra("name", name);
-        intent.putExtra("surname", surname);
-        intent.putExtra("web", web);
-        intent.putExtra("phone", phone);
-        startActivity(intent);
-    }
-
-
     public void openDialog(View view) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 
@@ -51,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
                         etName.setText("");
                         etSurname.setText("");
-                        etPhone.setText("");
                         etWeb.setText("");
+                        etPhone.setText("");
+
                     }
                 })
 
