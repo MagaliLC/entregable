@@ -25,7 +25,10 @@ public class SecondActivity extends AppCompatActivity {
         tvSurname = findViewById(R.id.surname);
         tvWeb = findViewById(R.id.web);
         tvPhone = findViewById(R.id.phone);
-        tvCounter=findViewById(R.id.counter);
+        tvCounter = findViewById(R.id.counter);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Formulario");
 
 
         String name = getIntent().getStringExtra("name");
@@ -38,13 +41,13 @@ public class SecondActivity extends AppCompatActivity {
         tvWeb.setText(web);
         tvPhone.setText(String.valueOf(phone));
 
-       prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
-        int counter = prefs.getInt("counter",0);
+        prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+        int counter = prefs.getInt("counter", 0);
         counter++;
         SharedPreferences.Editor editor = prefs.edit();
         editor.putInt("counter", counter);
         editor.commit();
-        tvCounter.setText(String.valueOf(prefs.getInt("counter",0)));
+        tvCounter.setText(String.valueOf(prefs.getInt("counter", 0)));
 
     }
 
@@ -63,6 +66,13 @@ public class SecondActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
+
 }
 
 

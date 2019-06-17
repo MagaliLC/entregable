@@ -108,29 +108,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:layout_weight="1"
-                android:background="@color/blue"
-                android:onClick="sendButtonPressed"
-                android:text="@string/btnShow" />
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:layout_weight="1"
-                android:background="@color/red"
-                android:onClick="openDialog"
-                android:text="@string/btnDelete" />
-        </LinearLayout>
 
     </LinearLayout>
 
