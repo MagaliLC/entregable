@@ -41,13 +41,7 @@ public class SecondActivity extends AppCompatActivity {
         tvWeb.setText(web);
         tvPhone.setText(String.valueOf(phone));
 
-        prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
-        int counter = prefs.getInt("counter", 0);
-        counter++;
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt("counter", counter);
-        editor.commit();
-        tvCounter.setText(String.valueOf(prefs.getInt("counter", 0)));
+        updateCounter();
 
     }
 
@@ -73,6 +67,19 @@ public class SecondActivity extends AppCompatActivity {
         return true;
     }
 
+    private void setText() {
+
+    }
+
+    private void updateCounter() {
+        prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+        int counter = prefs.getInt("counter", 0);
+        counter++;
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt("counter", counter);
+        editor.commit();
+        tvCounter.setText(String.valueOf(prefs.getInt("counter", 0)));
+    }
 }
 
 
